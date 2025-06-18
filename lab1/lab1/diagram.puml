@@ -1,0 +1,7 @@
+
+@startuml
+class MyClass {
+  +int myField
+  +void myMethod()
+}
+@enduml
