@@ -1,0 +1,36 @@
+@startuml
+
+package ru.seasids {
+    abstract class Dish {
+        - Long id
+        - String name
+        - int yearFounded
+        + getType()
+    }
+
+    class Hot {
+        - List~String~ subjects
+        - int weight
+        + printSchedule()
+        + printInfo(boolean)
+    }
+
+    class Dessert {
+        - List~Faculty~ faculties
+        + conductConference()
+        + addFaculty(String, String)
+        + printInfo(boolean)
+    }
+
+    class Faculty {
+        - String name
+        - String deanName
+    }
+
+    Dish <|-- Hot
+    Dish <|-- Dessert
+    Dessert "1" *-- "*" Faculty
+    Hot "1" *-- "*" String : garnirs
+}
+
+@enduml
