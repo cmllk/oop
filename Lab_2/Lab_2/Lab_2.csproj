@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Npgsql" Version="9.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="DessertF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DessertNas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DessertPer.cs" />
+    <Compile Update="HotPer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="HotDishNas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DessertSob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="HotSob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DessertSv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="HotSv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormDessert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Hot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+
+</Project>
